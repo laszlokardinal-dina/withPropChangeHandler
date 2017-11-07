@@ -1,0 +1,48 @@
+{
+  "name": "with-prop-change-handler",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/withPropChangeHandler.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel src --out-dir lib --ignore test.js --presets=es2015,react,stage-0",
+    "test": "mocha --require babel-core/register mochaInit.js \"src/**/*.test.{js,jsx}\"",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "format-check": "prettier --list-different \"src/**/*.{js,jsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laszlokardinal/withPropChangeHandler.git"
+  },
+  "author": "László Kardinál",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laszlokardinal/withPropChangeHandler/issues"
+  },
+  "homepage": "https://github.com/laszlokardinal/withPropChangeHandler#readme",
+  "dependencies": {
+    "react": "^16.0.0-alpha.12"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^4.1.2",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "jsdom": "^11.3.0",
+    "mocha": "^4.0.1",
+    "prettier": "1.7.4",
+    "react-test-renderer": "^16.0.0",
+    "sinon": "^4.0.1",
+    "react-dom": "^16.0.0"
+  },
+  "keywords": [
+    "react",
+    "hoc",
+    "prop",
+    "change"
+  ]
+}
